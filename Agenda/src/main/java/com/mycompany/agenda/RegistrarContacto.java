@@ -295,6 +295,16 @@ public class RegistrarContacto extends javax.swing.JFrame {
         //Definir el objeto
         Persona p = new Persona(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
         ClaseControladora.agregarPersona(p);
+        
+        //Limpiar
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+        jTextField8.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
