@@ -81,7 +81,7 @@ public class ConsultaApellidos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(221, 221, 221)
                 .addComponent(jLabel1)
-                .addGap(0, 251, Short.MAX_VALUE))
+                .addGap(0, 370, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,7 +115,7 @@ public class ConsultaApellidos extends javax.swing.JFrame {
         for (Persona p : encontrados) 
         {
             modelo.addElement(p.getNombres() + " " + p.getApellidos()+", Codigo: " + p.getCodigo()+", Dept: " + p.getDepartamento()+", Direccion: " + p.getDireccion()+", Genero: " + p.getGenero() + 
-                    ", Edad: " + p.getEdad());
+                    ", Edad: " + p.getEdad() + p.toString());
         }
         //Mostrar
         jList1.setModel(modelo);
