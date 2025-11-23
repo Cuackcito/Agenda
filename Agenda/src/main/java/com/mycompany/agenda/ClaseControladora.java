@@ -11,6 +11,9 @@ import java.util.ArrayList;
  * @author Cuack
  */
 public class ClaseControladora {
+    //hacerlos publicos
+    public static Trabajo nuevoContacto;
+      public static ContactoFamilia nuevoContacto2;
     //generarlista
    public static ArrayList<Persona> listaContacto = new ArrayList<>();
      //agregar contactos
