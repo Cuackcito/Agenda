@@ -6,13 +6,15 @@ package com.mycompany.agenda;
 
 /**
  *
- * @author Cuack
+ * @author danie
  */
-public class ContactoFamilia extends Persona {
-    private String tel1, tel2, tel3;
+public class Trabajo extends Persona{
+    private String tel1;
+    private String tel2;
+    private String tel3;
     private String clasificacionContacto;
-
-    public ContactoFamilia(String tel1, String tel2, String tel3, String clasificacionContacto, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
+    
+    public Trabajo(String tel1, String tel2, String tel3, String clasificacionContacto, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
         super(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
         this.clasificacionContacto = clasificacionContacto;
         this.tel1 = tel1;
@@ -21,7 +23,7 @@ public class ContactoFamilia extends Persona {
         {
             this.tel3 = "";
         }
-        else 
+        else
         {
             this.tel3 = tel3;
         }
@@ -56,7 +58,7 @@ public class ContactoFamilia extends Persona {
         {
             this.tel3 = "";
         }
-        else 
+        else
         {
             this.tel3 = tel3;
         }

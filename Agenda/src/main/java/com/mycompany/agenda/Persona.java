@@ -21,5 +21,60 @@ public class Persona {
         this.departamento = departamento;
         this.Edad = Edad;
     }
-    
+    //Getters
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public int getEdad() {
+        return Edad;
+    }
+    //Setters
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public void setEdad(int Edad) {
+        this.Edad = Edad;
+    }
 }
