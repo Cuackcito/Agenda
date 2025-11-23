@@ -107,16 +107,16 @@ public class ConsultaApellidos extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String apellidos = jTextField1.getText();
-        
+        //llamar el metodo
         ArrayList<Persona> encontrados = ClaseControladora.buscarPorApellido(apellidos);
-        
+        //Definir objeto como modelo
         DefaultListModel<String> modelo = new DefaultListModel<>();
-        
+        //Ciclo For para mostrar modelo
         for (Persona p : encontrados) 
         {
             modelo.addElement(p.getNombres() + " " + p.getApellidos());
         }
-        
+        //Mostrar
         jList1.setModel(modelo);
     }//GEN-LAST:event_jButton1ActionPerformed
 
