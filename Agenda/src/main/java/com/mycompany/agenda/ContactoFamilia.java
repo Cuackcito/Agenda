@@ -65,4 +65,9 @@ public class ContactoFamilia extends Persona {
     public void setClasificacionContacto(String clasificacionContacto) {
         this.clasificacionContacto = clasificacionContacto;
     }
+    
+    public String mostarFamilia()
+    {
+        return ", Clasificacion: " + clasificacionContacto + ", telefono1: " + tel1 + ", telefono2: " + tel2 + ", telefono3: " + tel3;
+    }
 }
