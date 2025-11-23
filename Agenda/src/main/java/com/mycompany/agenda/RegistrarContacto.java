@@ -122,6 +122,11 @@ public class RegistrarContacto extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jButton2.setText("Atrás");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -257,12 +262,12 @@ public class RegistrarContacto extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Definir variables
         String nombres, apellidos, codigo, genero, direccion, departamento, tel1, tel2, tel3, clasificacionContacto;
-        int edad;
+        int Edad;
         
         //Extraer informacion
         nombres = jTextField1.getText();
         apellidos = jTextField2.getText();
-        edad = Integer.parseInt(jTextField3.getText());
+        Edad = Integer.parseInt(jTextField3.getText());
         codigo = jTextField4.getText();
         direccion = jTextField5.getText();
         if(jRadioButton1.isSelected())
@@ -287,9 +292,15 @@ public class RegistrarContacto extends javax.swing.JFrame {
         tel2 = jTextField7.getText();
         tel3 = jTextField8.getText();
         
-        //
-        
+        //Definir el objeto
+        Persona p = new Persona(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
+        ClaseControladora.agregarPersona(p);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
