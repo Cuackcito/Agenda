@@ -58,6 +58,4 @@ public class Trabajo extends Persona{
             this.tel3 = tel3;
         }
     }
-    
-    
 }
