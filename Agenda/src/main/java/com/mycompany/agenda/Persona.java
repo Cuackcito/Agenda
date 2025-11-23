@@ -77,4 +77,24 @@ public class Persona {
     public void setEdad(int Edad) {
         this.Edad = Edad;
     }
+    @Override
+    public String toString()
+    {
+        return("Apellidos: " + codigo + 
+                ", Nombres: " + nombres + 
+                ", Codigo: " + codigo + 
+                ", Genero: " + genero + 
+                ", Direccion: " + direccion + 
+                ", Dept: " + departamento + 
+                ", Edad: " + Edad);
+    }
+    public String mostrarFamilia()
+    {
+        return "";
+    }
+    public String mostrarCompleto()
+    {
+        return toString() + " | " + mostrarFamilia();
+    }
 }
+
