@@ -12,9 +12,11 @@ public class Trabajo extends Persona{
     private String tel1;
     private String tel2;
     private String tel3;
+    private String clasificacionContacto;
     
-    public Trabajo(String tel1, String tel2, String tel3, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
+    public Trabajo(String tel1, String tel2, String tel3, String clasificacionContacto, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
         super(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
+        this.clasificacionContacto = clasificacionContacto;
         this.tel1 = tel1;
         this.tel2 = tel2;
         if("".equals(tel3))
@@ -38,8 +40,11 @@ public class Trabajo extends Persona{
     public String getTel3() {
         return tel3;
     }
-    //Setters
 
+    public String getClasificacionContacto() {
+        return clasificacionContacto;
+    }
+    //Setters
     public void setTel1(String tel1) {
         this.tel1 = tel1;
     }
@@ -57,5 +62,9 @@ public class Trabajo extends Persona{
         {
             this.tel3 = tel3;
         }
+    }
+
+    public void setClasificacionContacto(String clasificacionContacto) {
+        this.clasificacionContacto = clasificacionContacto;
     }
 }
