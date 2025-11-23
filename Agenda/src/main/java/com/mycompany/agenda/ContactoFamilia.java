@@ -10,18 +10,59 @@ package com.mycompany.agenda;
  */
 public class ContactoFamilia extends Persona {
     private String tel1, tel2, tel3;
+    private String clasificacionContacto;
 
-    public ContactoFamilia(String tel1, String tel2, String tel3, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
+    public ContactoFamilia(String tel1, String tel2, String tel3, String clasificacionContacto, String codigo, String nombres, String apellidos, String genero, String direccion, String departamento, int Edad) {
         super(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
+        this.clasificacionContacto = clasificacionContacto;
         this.tel1 = tel1;
         this.tel2 = tel2;
-        if(tel3 == ""){
-         this.tel3 = "0";
-    } else{
-             this.tel3 = tel3;
-            }
-       
+        if("".equals(tel3))
+        {
+            this.tel3 = "";
+        }
+        else 
+        {
+            this.tel3 = tel3;
+        }
     }
-    
-    
+    //Getters
+    public String getTel1() {
+        return tel1;
+    }
+
+    public String getTel2() {
+        return tel2;
+    }
+
+    public String getTel3() {
+        return tel3;
+    }
+
+    public String getClasificacionContacto() {
+        return clasificacionContacto;
+    }
+    //Setters
+    public void setTel1(String tel1) {
+        this.tel1 = tel1;
+    }
+
+    public void setTel2(String tel2) {
+        this.tel2 = tel2;
+    }
+
+    public void setTel3(String tel3) {
+        if("".equals(tel3))
+        {
+            this.tel3 = "";
+        }
+        else 
+        {
+            this.tel3 = tel3;
+        }
+    }
+
+    public void setClasificacionContacto(String clasificacionContacto) {
+        this.clasificacionContacto = clasificacionContacto;
+    }
 }
