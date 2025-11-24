@@ -110,6 +110,8 @@ public class ConsultaGeneral extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         this.dispose();
+        MenuPrincipal principal = new MenuPrincipal();
+        principal.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
