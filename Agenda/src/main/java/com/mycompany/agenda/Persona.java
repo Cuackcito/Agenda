@@ -78,9 +78,9 @@ public class Persona {
         this.Edad = Edad;
     }
     @Override
-    public String toString()
+public String toString()
     {
-        return("Apellidos: " + codigo + 
+        return("Apellidos: " + apellidos + 
                 ", Nombres: " + nombres + 
                 ", Codigo: " + codigo + 
                 ", Genero: " + genero + 
