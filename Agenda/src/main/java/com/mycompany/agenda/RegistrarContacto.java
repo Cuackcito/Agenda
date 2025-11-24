@@ -4,6 +4,8 @@
  */
 package com.mycompany.agenda;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author danie
@@ -287,10 +289,27 @@ public class RegistrarContacto extends javax.swing.JFrame {
         tel1 = jTextField6.getText();
         tel2 = jTextField7.getText();
         tel3 = jTextField8.getText();
-        
-        //Definir el objeto
-        Persona p = new Persona(codigo, nombres, apellidos, genero, direccion, departamento, Edad);
-        ClaseControladora.agregarPersona(p);
+           Persona nuevoContacto = null;
+
+    if (clasificacionContacto.equals("Familia")) {
+        // Llama al constructor de 11 parámetros de ContactoFamilia
+        nuevoContacto = new ContactoFamilia(
+            tel1, tel2, tel3, clasificacionContacto, 
+            codigo, nombres, apellidos, genero, 
+            direccion, departamento, Edad
+        );
+    } else if (clasificacionContacto.equals("Trabajo")) {
+        // Llama al constructor de 11 parámetros de Trabajo
+        nuevoContacto = new Trabajo(
+            tel1, tel2, tel3, clasificacionContacto, 
+            codigo, nombres, apellidos, genero, 
+            direccion, departamento, Edad
+        );
+    } else {
+        JOptionPane.showMessageDialog(this, "Clasificación de contacto no válida (debe ser 'Familia' o 'Trabajo').", "Error de Contacto", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+        ClaseControladora.agregarPersona(nuevoContacto);
         
         //Limpiar
         jTextField1.setText("");

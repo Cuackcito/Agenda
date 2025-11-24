@@ -112,4 +112,8 @@ public class ClaseControladora {
     public static void eliminarTodosLosContactos() {
         listaContacto.clear();
     }
+    
+    public static ArrayList<Persona> obtenerTodosLosContactos() {
+    return listaContacto;
+}
 }
