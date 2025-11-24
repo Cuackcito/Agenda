@@ -270,19 +270,15 @@ public class RegistrarContacto extends javax.swing.JFrame {
         Edad = Integer.parseInt(jTextField3.getText());
         codigo = jTextField4.getText();
         direccion = jTextField5.getText();
-        if(jRadioButton1.isSelected())
+        if (jRadioButton1.isSelected()) 
         {
             genero = jRadioButton1.getText();
         }
-        else
-        {
-            genero = "";
-        }
-        if(jRadioButton2.isSelected())
+        else if (jRadioButton2.isSelected()) 
         {
             genero = jRadioButton2.getText();
-        }
-        else
+        } 
+        else 
         {
             genero = "";
         }
@@ -305,11 +301,15 @@ public class RegistrarContacto extends javax.swing.JFrame {
         jTextField6.setText("");
         jTextField7.setText("");
         jTextField8.setText("");
+        jComboBox1.setSelectedIndex(-1);
+        jComboBox2.setSelectedIndex(-1);
+        jRadioButton1.setSelected(false);
+        jRadioButton2.setSelected(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
