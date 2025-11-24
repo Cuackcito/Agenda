@@ -50,6 +50,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/agenda/person_icon_159921.png"))); // NOI18N
         jButton6.setText("Consultar persona por apellido");
         jButton6.setToolTipText("");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Raleway Medium", 2, 18)); // NOI18N
         jButton7.setForeground(new java.awt.Color(133, 14, 53));
@@ -65,6 +70,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(133, 14, 53));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/agenda/person_icon_159921.png"))); // NOI18N
         jButton3.setText("Consultar Contacto por codigo");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jPanel3.setBackground(new java.awt.Color(238, 105, 131));
         jPanel3.setForeground(new java.awt.Color(238, 105, 131));
@@ -74,6 +84,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/agenda/register_login_signup_icon_219991 (1).png"))); // NOI18N
         jButton1.setText("    Registrar");
         jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Raleway Medium", 2, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(133, 14, 53));
@@ -89,12 +104,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(133, 14, 53));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/agenda/icono modificar.png"))); // NOI18N
         jButton4.setText("Modificar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Raleway Medium", 2, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(133, 14, 53));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/agenda/delete_profile_user_icon_148630.png"))); // NOI18N
         jButton5.setText("Eliminar ");
         jButton5.setToolTipText("");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -195,11 +220,42 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        FormularioConsultaTelefono consultar2 = new FormularioConsultaTelefono();
+        consultar2.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        FormularioConsultaCodigo consultar1 = new FormularioConsultaCodigo();
+        consultar1.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        ConsultaApellidos consultar = new ConsultaApellidos();
+        consultar.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        RegistrarContacto registrar = new RegistrarContacto();
+        registrar.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        ModificarContactos modificar = new ModificarContactos();
+        modificar.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
